@@ -12,7 +12,7 @@ module Riak
       attr_writer :config_location
       attr_writer :riak
 
-      DEFAULT_CONFIG_LOCATION = 'config/database.yml'
+      DEFAULT_CONFIG_LOCATION = 'config/riak.yml'
 
       # Raised when we can't find a configuration which matches the
       # current RACK_ENV

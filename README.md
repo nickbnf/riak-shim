@@ -1,7 +1,7 @@
 # Riak Shim
 
 A teeny shim between your code and the riak-client gem.  Reads database
-configuration out of config/database.yml and derives bucket names from your
+configuration out of config/riak.yml and derives bucket names from your
 class names and an appropriate prefix.
 
 Riak is a database from the good people at Basho.  Check it out:
@@ -27,7 +27,7 @@ Or install it yourself as:
 
 ## Usage
 
-Create a config/database.yml containing the details of your Riak setup like so:
+Create a config/riak.yml containing the details of your Riak setup like so:
 
     development: &default
       bucket_prefix: myapp_dev_
